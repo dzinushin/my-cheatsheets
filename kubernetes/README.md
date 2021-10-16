@@ -3,6 +3,15 @@ https://github.com/ramitsurana/awesome-kubernetes
 https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 
 
+
+# kubectl
+
+```
+kubectl <command> <type> <name> <flags>
+```
+
+
+
 ### config
 
 kubectl config set-context --current --namespace=agreements-service-7-production
@@ -14,7 +23,7 @@ kubectl get namespaces
 
 ### pods
 
-kubectl get pods --all-namespaces 
+kubectl get pods --all-namespaces|-A
 
 
 
@@ -42,3 +51,9 @@ kubectl exec --stdin --tty shell-demo -- /bin/bash
 
 kubectl logs --namespace=agreements-service-7-production agreements-service-fcbf9466c-942ch -f
 kubectl logs --namespace=otp-service-40-production  -l app=otp-service -c otp-service -f
+
+### how delete namespace
+
+1. delete deployment
+2. delete containers
+3. delete namespace
