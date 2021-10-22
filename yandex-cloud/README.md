@@ -3,6 +3,16 @@
 Yandex.Cloud CLI aka yc
 
 
+configuration
+```
+~/.config/yandex-cloud
+
+```
+
+```
+yc config profile list
+```
+
 examples
 ```
 yc resource-manager cloud list
