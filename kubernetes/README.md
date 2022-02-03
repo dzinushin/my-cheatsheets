@@ -72,6 +72,7 @@ kubectl proxy --port=8080
 kubectl exec --stdin --tty gosuslugi-profile-review-567f8b97b9-nqhdp -- /bin/bash
 kubectl exec --stdin --tty agreements-service-6586df9dfc-j747w --namespace=agreements-service-7-production -- /bin/bash
 kubectl exec --stdin --tty shell-demo -- /bin/bash
+k exec -ti centos -- /bin/bash
 
 
 ### logs
