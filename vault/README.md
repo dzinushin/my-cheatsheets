@@ -42,10 +42,18 @@ curl -XPOST -d "{\"jwt\": \"${CI_JOB_JWT}\", \"role\": \"fin-gitlab\"}" ${VAULT_
 ```
 vault kv list finance-internal/sms_center/
 vault kv get finance-internal/sms_center/send
+vault kv get -format=json finance-internal/sms_center/send
 vault kv get finance-internal/kuber/service-accounts/prod/gitlab-cicd
 vault kv get -field=password finance-internal/sms_center/send
 ```
 
 ```
 vault read -format=json finance-internal/data/kuber/service-accounts/prod/gitlab-cicd
+```
+
+
+```
+vault kv put secrets/tokens token1=aaa token2=bbb
+vault kv delete secrets/tokens
+vault kv destroy secrets/tokens
 ```
