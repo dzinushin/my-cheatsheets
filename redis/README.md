@@ -21,3 +21,17 @@ DEL key1
 select 0
 SET fincian_620752fa-6d1f-4a25-a249-4b28ce9cd26f "{\"userId\":\"957615cd-70d5-473e-8407-ca062277b327\",\"finAuth\":true}" EX 600
 ```
+
+
+## Info
+
+```
+info memory
+dbsize
+```
+
+## Configuration
+
+```
+requirepass foobared
+```
