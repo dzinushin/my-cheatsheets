@@ -1,7 +1,12 @@
 # redis
 
+## redis cli tool
 
+```
+redis-cli -h 10.3.18.47 -p 6379  -a key
 redis-cli -h 10.3.18.32 -p 43615 -a xxxx dbsize
+```
+
 
 ```
 KEYS *
@@ -24,6 +29,12 @@ SET fincian_620752fa-6d1f-4a25-a249-4b28ce9cd26f "{\"userId\":\"957615cd-70d5-47
 
 
 ## Info
+
+get info about databases and keys
+
+```
+info keyspace
+```
 
 ```
 info memory
