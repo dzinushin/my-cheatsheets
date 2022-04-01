@@ -10,6 +10,42 @@ https://kubernetes.io/ru/docs/reference/kubectl/cheatsheet/
 kubectl <command> <type> <name> <flags>
 ```
 
+## kubectl configuration
+
+default location ```${HOME}/.kube```
+
+```
+kubectl config view -o \
+    jsonpath='{.clusters[*].cluster.server}')
+```
+
+## k8s api
+
+### access k8s api 
+
+```
+kubectl get --raw /
+kubectl get --raw /version
+kubectl get --raw /api/v1/nodes | jq
+kubectl get --raw /api/v1/namespaces | jq
+kubectl get --raw /apis/apps/v1/namespaces/default/deployments/nginx
+```
+or using proxy
+```
+kubectl proxy --port=8080 &
+curl localhost:8080
+```
+
+or using direct server api access
+```
+APISERVER=$(kubectl config view -o \
+    jsonpath='{.clusters[*].cluster.server}')
+TOKEN=$(kubectl get secrets \
+    -o jsonpath='{.items[?(@.type=="kubernetes.io/service-account-token")].data.token}' \
+    | base64 --decode)
+curl $APISERVER/version --header "Authorization: Bearer $TOKEN" --insecure
+```
+
 # run container from image
 
 ```

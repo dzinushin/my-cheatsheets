@@ -25,3 +25,7 @@ how add dependency
 2. run ```go mod tidy```
 3. optionally run ```go mod vendor``` for vendor deps
 
+
+
+Go modules
+
