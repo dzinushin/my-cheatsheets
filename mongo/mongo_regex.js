@@ -1,0 +1,1 @@
+db.zips.find({city : { $regex : /^[0-9]/ }})
