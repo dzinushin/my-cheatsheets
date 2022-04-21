@@ -22,10 +22,25 @@ touch main.go
 
 how add dependency
 1. add import statement in code
-2. run ```go mod tidy```
-3. optionally run ```go mod vendor``` for vendor deps
+2. run ```go mod tidy -v```
+3. optionally run ```go mod vendor -v``` for vendor deps
 
 
 
 Go modules
 
+
+how add external package to project
+
+```
+go get github.com/bitfield/script
+```
+add import
+```
+import "github.com/bitfield/script"
+```
+
+how update external package version
+```
+go get github.com/bitfield/script
+```
