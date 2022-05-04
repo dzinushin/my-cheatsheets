@@ -5,6 +5,7 @@
 ```
 redis-cli -h 10.3.18.47 -p 6379  -a key
 redis-cli -h 10.3.18.32 -p 43615 -a xxxx dbsize
+redis-cli -u "redis://default:<pwd>@<host|ip>:6379/0""
 ```
 
 
@@ -21,6 +22,15 @@ DEL key1
 ```
 
 ## Databases
+
+```
+$ cat redis.conf | grep databases
+databases 16
+```
+
+```
+CONFIG GET databases
+```
 
 ```
 select 0
