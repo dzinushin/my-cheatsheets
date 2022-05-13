@@ -54,6 +54,7 @@ kubectl run --rm -it --image=centosadmin/utils test -- bash
 
 ### how get info
 
+kubectl cluster-info
 k describe <pod | job | whatever>
 k explain pod | pod.spec | ...
 k get pod <podname> -o yaml
