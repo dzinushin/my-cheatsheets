@@ -21,3 +21,17 @@ curl -X POST \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d 'grant_type=client_credentials&scope=bank.read bank.decision bank.remove openid'
 ```
+
+```
+export BASIC_AUTH_USER=bank-psb
+export BASIC_AUTH_PASSWORD=password
+export AUTH=$(echo -ne "$BASIC_AUTH_USER:$BASIC_AUTH_PASSWORD" | base64)
+
+curl \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --header "Authorization: Basic $AUTH" \
+  --request POST \
+  --data  'grant_type=client_credentials&scope=bank.read bank.decision bank.remove openid' \
+  https://uaa.dev.cf.cian.tech/oauth2/token
+
+```
