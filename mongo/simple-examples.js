@@ -1,5 +1,13 @@
 
 
+// projectsion
+
+clientId = "328a6f09-6918-492e-b304-83ac636e55ff"
+
+db.scoreApplication.find({clientId}, {_id: 1, clientId:1, createdAt: 1, banks: 1, originalBanks: 1, outdated:1})
+
+
+
 //
 // select between dates
 db.events.find({
