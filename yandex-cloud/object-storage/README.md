@@ -18,3 +18,12 @@ s3cmd info s3://marketplace-dev-bucket/
 s3cmd put hello.txt s3://marketplace-dev-bucket
 s3cmd rm s3://marketplace-dev-bucket/hello.txt
 ```
+
+example how run s3cmd without configuration:
+```
+s3cmd \
+    --access_key="$GCS_CDN_KEY_ID" \
+    --secret_key="$GCS_CDN_ACCESS_KEY" \
+    --host-bucket="%(bucket)s.storage.googleapis.com" \
+    ls s3://<path>
+```
