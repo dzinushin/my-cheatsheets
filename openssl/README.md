@@ -20,4 +20,20 @@ openssl x509 -in certificate.crt -text -noout
 openssl pkcs12 -info -in keyStore.p12
 ```
 
+### check two-way (mutuaal) TLS authentication (client) (from https://asciinema.org/a/173370)
+```
+openssl s_client -connect localhost:7569 \
+  -CAfile certs/ca.crt.pem \
+  -cert certs/client.crt.pem \
+  -key private/client.key.pem \
+  -tls1_2 -state -quiet
+```
 
+### check two-way (mutuaal) TLS authentication (server)
+```
+openssl s_server -accept localhost:7569 \
+  -CAfile certs/ca.crt.pem \
+  -cert certs/client.crt.pem \
+  -key private/client.key.pem \
+  -Verify 10 -tls1_2 -state -quiet
+```
