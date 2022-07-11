@@ -35,3 +35,12 @@ curl \
   https://uaa.dev.cf.cian.tech/oauth2/token
 
 ```
+
+### how to curl an endpoint protected by mutual tls (mtls) (from https://downey.io/notes/dev/curl-using-mutual-tls/)
+
+```
+curl --cacert ca.crt \
+     --key client.key \
+     --cert client.crt \
+     https://server.com
+```
