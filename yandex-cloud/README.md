@@ -33,3 +33,15 @@ yc managed-postgresql database delete agreements-service --cluster-name=fin-dev-
 yc managed-postgresql user delete agreements-service --cluster-name=fin-dev-1
 ```
 
+
+### service accounts
+
+create
+```
+yc iam service-account create --name <sa_name> --folder-name <folder>
+```
+
+add role in folder
+```
+yc resource-manager folder add-access-binding <folder> --role admin --service-account-name <sa_name>
+```
