@@ -54,14 +54,15 @@ kubectl run --rm -it --image=centosadmin/utils test -- bash
 
 ### how get info
 
+```
 kubectl cluster-info
 k describe <pod | job | whatever>
 k explain pod | pod.spec | ...
 k get pod <podname> -o yaml
-
+```
 
 ### config
-
+```
 kubectl config set-cluster slurm.io \
   --server https://172.20.100.2:6443 \ 
   --certificate-authority=/etc/kubernetes/pki/ca.crt \ 
@@ -79,11 +80,13 @@ kubectl config use-context slurm.io
 
 kubectl config use-context <context name>
 kubectl config set-context --current --namespace=agreements-service-7-production
+```
 
 ### namespaces
 
+```
 kubectl get namespaces
-
+```
 
 ### pods
 
@@ -102,21 +105,33 @@ kubectl get secret postgresql -o json --namespace=otp-service-40-production
 
 
 ### proxy
+```
 kubectl proxy --port=8080
+```
+
+### port forwarding
+
+```
+kubectl port-forward svc/<some-svc> 8443(dst-port):443(src-port) -n <ns>
+```
 
 
 ### ssh
+
+```
 kubectl exec --stdin --tty gosuslugi-profile-review-567f8b97b9-nqhdp -- /bin/bash
 kubectl exec --stdin --tty agreements-service-6586df9dfc-j747w --namespace=agreements-service-7-production -- /bin/bash
 kubectl exec --stdin --tty shell-demo -- /bin/bash
 kubectl exec -ti centos -- /bin/bash
 kubectl exec -it <podname> -- sh
-
+```
 
 ### logs
 
+```
 kubectl logs --namespace=agreements-service-7-production agreements-service-fcbf9466c-942ch -f
 kubectl logs --namespace=otp-service-40-production  -l app=otp-service -c otp-service -f
+```
 
 ### how delete namespace
 
@@ -127,7 +142,8 @@ kubectl logs --namespace=otp-service-40-production  -l app=otp-service -c otp-se
 
 ###
 
+```
 k describe <obj>
 k explain pod
 k explain pod.spec
-
+```
