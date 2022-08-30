@@ -44,3 +44,8 @@ how update external package version
 ```
 go get github.com/bitfield/script
 ```
+
+
+Standard Go Project Layout
+
+https://github.com/golang-standards/project-layout
