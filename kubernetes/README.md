@@ -147,3 +147,15 @@ k describe <obj>
 k explain pod
 k explain pod.spec
 ```
+
+### restart
+
+```
+kubectl rollout restart deployment <deployment_name> -n <namespace>
+```
+
+### scale
+
+```
+kubectl scale deployment <deployment name> -n <namespace> --replicas=3
+```
