@@ -1,4 +1,6 @@
+### links
 
+https://www.baeldung.com/curl-rest
 
 
 ### view only headers
