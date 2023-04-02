@@ -56,3 +56,8 @@ dbsize
 ```
 requirepass foobared
 ```
+
+## Delete all keys
+```
+redis-cli keys '*' | xargs redis-cli del
+```
