@@ -3,7 +3,7 @@
 ```
 DOMAIN=fin.live
 CERTBOT_WORKDIR=~/lets-encrypt
-mkdir -p CERTBOT_WORKDIR
+mkdir -p $CERTBOT_WORKDIR
 certbot certonly  -d $DOMAIN -d "*.$DOMAIN" \
   --preferred-challenges=dns \
   --manual \
