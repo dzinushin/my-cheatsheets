@@ -48,3 +48,9 @@ mc admin user list analytics
 /opt/bin/mc cp --recursive minio/cdn .
 /opt/bin/mc cp --recursive minio/swagger .
 /opt/bin/mc cp --recursive minio/tmp .
+
+mcl alias set vtb-registry https://storage.yandexcloud.net <creds...>
+mcl alias ls
+mcl ls --summarize vtb-registry/vtb-registry
+mcl rm --recursive --force --older-than 30d   vtb-registry/vtb-registry
+mcl cp "vtb-registry/vtb-registry/vtb-registry-2023-06-01T13:00:00.019547.xlsx" ~/tm
