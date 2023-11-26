@@ -160,3 +160,31 @@ kubectl rollout restart deployment <deployment_name> -n <namespace>
 ```
 kubectl scale deployment <deployment name> -n <namespace> --replicas=3
 ```
+
+### service account
+
+```
+kubectl create serviceaccount <sa-name>
+kubectl create serviceaccount <sa-name> --dry-run=client -o yaml
+kubectl get sa
+kubectl create role podlister --verb=list --resource=pods
+kubectl create role podlister --verb=list --resource=pods --dry-run=client -o yaml
+kubectl create rolebinding <rb-name> --serviceaccount=<ns-name>:<sa-name> --role=<role-name>
+kubectl get role
+kubectl get rolebinding
+```
+
+
+```
+cd /var/run/secrets/kubernetes.io/serviceaccount
+```
+
+from pod
+```
+CA=/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+curl --insecure -x GET https://kubernetes/api --header "Authorization: Bearer $TOKEN"
+curl --cacert $CA -x GET https://kubernetes/api --header "Authorization: Bearer $TOKEN"
+
+curl --cacert $CA -x GET https://kubernetes/api/v1/namespaces/default/pods --header "Authorization: Bearer $TOKEN"
+```
