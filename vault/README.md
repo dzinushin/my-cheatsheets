@@ -25,6 +25,7 @@ export VAULT_ADDR=https://127.0.0.1:8200
 
 vault login -method=userpass username=sdsd
 vault login -method=ldap username=<username>
+vault login token="aaa"
 ```
 
 get token via JWT 

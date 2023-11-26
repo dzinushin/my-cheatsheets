@@ -50,6 +50,7 @@ curl $APISERVER/version --header "Authorization: Bearer $TOKEN" --insecure
 
 ```
 kubectl run --rm -it --image=centosadmin/utils test -- bash
+kubectl run --it --rm alpine --image=alpine -- sh
 ```
 
 ### how get info
