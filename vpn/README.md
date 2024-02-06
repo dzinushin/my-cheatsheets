@@ -18,3 +18,5 @@ https://www.wireguard.com/
 
 
 https://inferno.name/
+
+https://skystark.net/vps
