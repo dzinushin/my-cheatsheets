@@ -31,10 +31,11 @@ drop schema "sms" cascade;
 \l - Display database
 \c - Connect to database
 
-\d   list tables, views, and sequences
-\dn  List schemas
-\dt  List tables inside public schemas
-\dt  schema1. - List tables inside particular schemas. For eg: 'schema1'.
+\d            - list tables, views, and sequences
+\dn           - list schemas
+\dt           - list tables inside public schemas
+\dt  schema1. - list tables inside particular schemas. For eg: 'schema1'.
+\di+          - list indexes  
 ```
 
 
@@ -101,3 +102,25 @@ SELECT '2011-01-01 00:00:00+03'::TIMESTAMP;
 SELECT '2011-01-01 00:00:00+03'::TIMESTAMP WITH TIME ZONE;
 SET TIMEZONE TO 'Australia/Melbourne';
 ```
+
+## generate series
+
+```
+CREATE TABLE tickets (id int, content text, status smallint);
+INSERT INTO tickets
+SELECT id, 'case description text', 20
+FROM generate_series(1, 499750) AS id;
+```
+
+## indexes
+
+```
+CREATE INDEX ON tickets(status);
+```
+```
+DROP INDEX tickets_status_idx;
+CREATE INDEX ON tickets(status)
+WHERE status = 10;
+```
+
+## explain query plan
