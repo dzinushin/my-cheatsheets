@@ -1,6 +1,6 @@
 
 
-ruvds.com
+https://ruvds.com
 
 https://vdsina.ru/
 
@@ -20,3 +20,6 @@ https://www.wireguard.com/
 https://inferno.name/
 
 https://skystark.net/vps
+
+
+https://ishosting.com
