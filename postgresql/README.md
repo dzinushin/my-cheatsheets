@@ -106,10 +106,19 @@ SET TIMEZONE TO 'Australia/Melbourne';
 ## generate series
 
 ```
+SELECT id
+FROM generate_series(1, 1000) AS id;
+```
+
+```
 CREATE TABLE tickets (id int, content text, status smallint);
 INSERT INTO tickets
 SELECT id, 'case description text', 20
 FROM generate_series(1, 499750) AS id;
+```
+
+```
+SELECT GENERATE_SERIES('2012-06-29', '2012-07-03', '1 day'::INTERVAL) AS date
 ```
 
 ## indexes
@@ -124,3 +133,11 @@ WHERE status = 10;
 ```
 
 ## explain query plan
+
+
+## with
+
+```
+with u as (select 'sss' as id)
+select * from users where id = u.id
+```
