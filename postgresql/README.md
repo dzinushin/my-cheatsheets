@@ -141,3 +141,18 @@ WHERE status = 10;
 with u as (select 'sss' as id)
 select * from users where id = u.id
 ```
+
+## UUIDs
+
+```
+select '697dffc9-8ba5-410c-b677-227475a73530'::uuid;
+
+CREATE TABLE contacts(
+     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+     name TEXT,
+     email TEXT
+ );
+
+insert into contacts(name, email) values('DZ', 'dz@dz.com');
+insert into contacts(id, name, email) values('697dffc9-8ba5-410c-b677-227475a73530'::uuid, 'Bill', 'bill@bill.com');
+```
