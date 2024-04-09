@@ -18,6 +18,8 @@ yc config set service-account-key <path-to-service-account-key-file>
 yc config set instance-service-account true
 ```
 
+how get OAuth token https://yandex.cloud/ru/docs/iam/concepts/authorization/oauth-token
+
 set default cloud & folder
 ```
 yc config set cloud-id <>
