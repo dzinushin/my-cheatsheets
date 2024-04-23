@@ -22,6 +22,8 @@ locks
 ./gradlew clean --refresh-dependencies
 ```
 
+
+
 init
 https://docs.gradle.org/current/userguide/build_init_plugin.html
 ```
@@ -61,4 +63,9 @@ gradle init \
   --project-name my-project  \
   --java-version 21
 
+```
+
+wrapper
+```
+gradle wrapper --gradle-version=8.7
 ```
