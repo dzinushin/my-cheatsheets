@@ -70,7 +70,7 @@ Sliced test context in Spring:
 ...
 
 @MockBean (for mocking beans with Mockito)
-
+@SpyBean
 
 @SpringBootTest(webEnvironment = MOCK (default!))
 
