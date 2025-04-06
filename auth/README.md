@@ -21,6 +21,12 @@ JWT RFC 7519
 Keycloak
 
 
+
+### OIDC
+
+<openid uri>/.well-known/openid-configuration
+
+
 ###
 
 https://oauth.net
@@ -36,6 +42,6 @@ An Illustrated Guide to OAuth and OpenID Connect
 https://www.youtube.com/watch?v=t18YB3xDfXI
 
 OAuth2, OpenID: SSO under the hood - Daniel Garnier-Moiroux
-https://www.youtube.com/watch?v=bH5PxcJzwME
+https://www.youtube.com/watch?v=bH5PxcJzwME https://github.com/Kehrlann/sso-live-coding
 
 
