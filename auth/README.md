@@ -45,3 +45,5 @@ OAuth2, OpenID: SSO under the hood - Daniel Garnier-Moiroux
 https://www.youtube.com/watch?v=bH5PxcJzwME https://github.com/Kehrlann/sso-live-coding
 
 
+https://www.youtube.com/@saschazegerman/videos
+
