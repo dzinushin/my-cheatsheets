@@ -45,6 +45,9 @@ https://www.youtube.com/watch?v=t18YB3xDfXI
 OAuth2, OpenID: SSO under the hood - Daniel Garnier-Moiroux
 https://www.youtube.com/watch?v=bH5PxcJzwME https://github.com/Kehrlann/sso-live-coding
 
-
+Sascha Preibisch channel about OAuth2 OIDC
 https://www.youtube.com/@saschazegerman/videos
+https://github.com/SaschaZeGerman
 
+Основы OAuth 2.0 и OpenID Connect
+https://www.youtube.com/watch?v=yNmN4k-HxWM
