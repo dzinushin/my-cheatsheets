@@ -30,6 +30,7 @@ Keycloak
 ###
 
 https://oauth.net
+https://openid.net/developers/how-connect-works/
 
 
 
