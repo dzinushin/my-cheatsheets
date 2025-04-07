@@ -1,5 +1,7 @@
 # redis
 
+https://habr.com/ru/articles/204354/
+
 ## redis cli tool
 
 ```
@@ -60,4 +62,15 @@ requirepass foobared
 ## Delete all keys
 ```
 redis-cli keys '*' | xargs redis-cli del
+```
+
+### TTL
+
+```
+redis 127.0.0.1:6379> ttl test:1:string
+(integer) -1
+redis 127.0.0.1:6379> expire test:1:string 6000
+(integer) 1
+redis 127.0.0.1:6379> ttl test:1:string
+(integer) 5997
 ```
