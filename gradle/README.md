@@ -125,3 +125,17 @@ locks
 gradle --stop
 gradle --status
 ```
+
+*** Dependencies
+
+
+```
+gradle dependencides
+gradle  dependencyInsight --dependency=<depId>
+```
+how check dependency updates
+
+https://github.com/ben-manes/gradle-versions-plugin
+```
+gradle dependencyUpdates
+```
