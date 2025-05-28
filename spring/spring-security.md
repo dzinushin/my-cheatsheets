@@ -8,6 +8,14 @@ https://docs.spring.io/spring-security/reference/index.html
 
 https://garnier.wf/
 
+https://github.com/Kehrlann
+
+
+Spring Security Architecture Principles by Daniel Garnier-Moiroux @ Spring I/O 2024
+https://www.youtube.com/watch?v=HyoLl3VcRFY
+https://github.com/Kehrlann/spring-security-the-good-parts
+
+
 Spring Security, demistifed
 https://youtu.be/iJ2muJniikY?si=4uAWpUkU2ADmK5aA
 
