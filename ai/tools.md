@@ -23,3 +23,9 @@ https://github.com/QwenLM/qwen-code
 ### copilot
 
 copilot-cli
+
+
+### gemini
+
+gemini-cli
+https://github.com/google-gemini/gemini-cli
