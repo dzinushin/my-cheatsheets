@@ -5,6 +5,8 @@
 https://opencode.ai
 https://github.com/anomalyco/opencode
 
+https://theaiops.substack.com/p/setting-up-opencode-with-local-models
+
 ### kodacode
 
 https://kodacode.ru/
