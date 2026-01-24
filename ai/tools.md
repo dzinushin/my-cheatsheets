@@ -45,3 +45,6 @@ https://docs.ollama.com/integrations/claude-code
 
 https://agentrouter.org
 
+### Kilocode
+
+https://github.com/Kilo-Org/kilocode
