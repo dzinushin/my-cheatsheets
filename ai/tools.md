@@ -36,3 +36,8 @@ copilot-cli
 
 gemini-cli
 https://github.com/google-gemini/gemini-cli
+
+### ollama
+
+https://docs.ollama.com/integrations/claude-code
+
