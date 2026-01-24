@@ -41,3 +41,7 @@ https://github.com/google-gemini/gemini-cli
 
 https://docs.ollama.com/integrations/claude-code
 
+### AgentRouter
+
+https://agentrouter.org
+
