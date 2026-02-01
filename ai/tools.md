@@ -31,6 +31,8 @@ https://github.com/QwenLM/qwen-code
 
 copilot-cli
 
+Ryan Hecht
+
 
 ### gemini
 
