@@ -16,6 +16,11 @@ https://theaiops.substack.com/p/setting-up-opencode-with-local-models
 
 https://kodacode.ru/
 
+### kimi
+
+https://www.kimi.com/code
+
+
 
 ### Google Antigravity
 
