@@ -60,3 +60,7 @@ https://agentrouter.org
 ### Kilocode
 
 https://github.com/Kilo-Org/kilocode
+
+### cline
+
+https://cline.bot
