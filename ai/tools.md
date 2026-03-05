@@ -6,6 +6,11 @@ https://agents.md/
 
 ### Claude
 
+https://claude.ai
+https://github.com/anthropics/skills
+
+https://skillsmp.com
+
 
 ### Grok
 https://grok.com/
