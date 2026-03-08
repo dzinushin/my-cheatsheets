@@ -3,6 +3,9 @@ https://app.diagrams.net/
 https://sequencediagram.org/
 https://excalidraw.com/
 
+very simple board
+https://maxeddraw.com/ 
+
 
 * PlantUML *
 
