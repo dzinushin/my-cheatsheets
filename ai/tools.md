@@ -9,7 +9,10 @@ https://agents.md/
 https://claude.ai
 https://github.com/anthropics/skills
 
-https://skillsmp.com
+Маркетплейс скиллов: https://skillsmp.com/
+Скилл для создания скиллов: https://github.com/anthropics/skills/tree/main/skills/skill-creator 
+Tree of thought: https://github.com/youkchansim/tree-of-thought 
+Superpowers: https://github.com/obra/superpowers
 
 
 ### Grok
