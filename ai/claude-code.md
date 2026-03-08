@@ -1,5 +1,9 @@
 ##
 
+## resources
+
+https://claude.com/resources/courses
+
 
 ### структура
 
