@@ -107,3 +107,24 @@ see https://medium.com/lucjuggery/a-container-to-access-the-shell-of-the-host-2c
 docker run --privileged --pid=host -it alpine:3.8 \
 nsenter -t 1 -m -u -n -i sh
 ```
+
+
+## container inspection
+
+Для одного контейнера:
+```
+docker stats <container_name_or_id>
+```
+Если нужен один снимок без живого обновления (удобно для скриптов):
+```
+docker stats --no-stream
+```
+Можно настроить вывод только нужных полей:
+```
+docker stats --no-stream --format "table {{.Name}}\t{{.Status}}\t{{.MemUsage}}\t{{.MemPerc}}"
+```
+
+docker inspect — детальная информация о контейнере, включая лимиты памяти:
+```
+docker inspect <container_name_or_id>
+```
