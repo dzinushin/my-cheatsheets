@@ -4,6 +4,8 @@
 
 https://claude.com/resources/courses
 
+https://www.youtube.com/@AIforBeginners-v3x
+
 
 ### Claude
 
