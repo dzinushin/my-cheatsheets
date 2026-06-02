@@ -7,6 +7,8 @@ https://claude.com/resources/courses
 https://www.youtube.com/@AIforBeginners-v3x
 
 
+https://github.com/ThamJiaHe/claude-code-handbook
+
 ### Claude
 
 https://claude.ai
@@ -41,4 +43,6 @@ project-root
 # to memorize
 ```
 
-  
+CC standart workflow: 
+Explore -> Plan -> Code -> Commit
+
